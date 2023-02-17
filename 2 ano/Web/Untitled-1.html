@@ -1,0 +1,70 @@
+<script>
+function Valida() {
+
+var erro=false;
+var msg="Preencha os seguintes campos";
+var msgOK="Obrigado pelo seu cadastro";
+
+if (frm.txtNome.value==""){
+erro=true;
+msg+="\n\t - Nome";
+}
+
+/*if (frm.txtEndereco.value==""){
+erro=true;
+msg+="\n - Endereco";
+}
+alert("oi");
+*/
+if (frm.txtBairro.value==""){
+erro=true;
+msg+="\n - Bairro";
+}
+if (Boolean(erro)){
+alert(msg);
+return false;
+} else { 
+msgOK += "\n Sr(a). " + frm.txtNome.value +"\n e um prazer te-lo como nosso cliente... \n boas compras!";
+window.alert(msgOK);
+window.open("./pagina2.html");
+return true;
+}
+</script>
+<html>
+<head>
+<title>Formul&aacute;rio de Cadastro</title>
+</head>
+
+<body>
+<form name="frm">
+<table>
+<tr><td colspan="4" align="center"><h2><u>Formul&aacute;rio de Cadastro</u></h2></td></tr>
+<tr>
+<td>Name:</td>
+<td colspan="3"><input type="text" name="txtNome" maxlength="120" size="60" /> </td>
+</tr>
+<tr>
+<td> Complemento: </td>
+<td><input type="text" name="txtComplemento" maxlength="30" size="10" /> </td>
+</tr>
+<tr>
+<td> Bairro: </td>
+<td><input type="text" name="txtBairro" maxlength="50" size="30" /> </td>
+</tr>
+<tr>
+<td> Sexo: </td>
+<td><input type="radio" name="rdSexo" value="M" checked="checked" /> Masculino <input type="radio" name="rdSexo" value="F" checked="checked" /> Feminino </td>
+</tr>
+<tr>
+<td> Sexo: </td>
+<td colspan="3"><select name="slUF">
+<option value="ES">Esp&iacute;rito Santo</option>
+<option value="RJ" selected="selected">Rio de Janeiro</option>
+</select>
+</td>
+</tr>
+<tr><td colspan="4" align="center"><input type="button" value="Enviar" onClick="return Valida();" /></td></tr>
+</table>
+</body>
+</form>
+</html>

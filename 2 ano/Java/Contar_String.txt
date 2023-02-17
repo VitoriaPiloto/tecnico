@@ -1,0 +1,48 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package achaletraporrar;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author aluno
+ */
+public class AchaLetraPorrAr {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+      
+        String nome="Octacílio Avarenga Filho - Muito Rubro-negro";
+        
+        contar(nome);
+    }
+
+    private static void contar(String texto) {
+        System.out.println("entrei");
+       int tam=texto.length();
+        int cont=0;
+        char letra=' ';
+        for (int i = 0; i < tam; i++) {
+            letra=texto.charAt(i);
+            System.out.println(letra);
+            if (letra=='o' || letra=='O') {
+                cont++;
+            }
+            
+        }
+        exibe(cont,letra);
+    }
+
+    private static void exibe(int cont, char letra) {
+        System.out.println("Numero de letras: " + cont + letra);
+    }
+
+    
+}

@@ -1,0 +1,49 @@
+ public static void main(String[] args) {
+        int num,imp = 0,c=1;
+        double med = 0,soma = 0;
+        String resp="sim";
+        
+        while(resp.equals("sim")){
+            num=pler(c);
+            System.out.println("o número é "+num);
+            soma=psomar(num,soma);
+            imp=pimp(num);
+            med=pmedia(soma,c);
+            if(num%2==0){
+            }else{
+                System.out.println("Ele é "+imp+" é impar");}
+            resp=JOptionPane.showInputDialog("deseja continuar informando?");
+            if(resp.equalsIgnoreCase("sim")){
+                c=c+1;
+            }
+        }
+        System.out.println("A soma dos numeros é "+soma);
+        System.out.println("A média é "+med);
+        
+        
+    }
+    static int pler(int c){
+        int n;
+        n=Integer.parseInt(JOptionPane.showInputDialog("informe o número que deseja"));
+        return n;
+    }
+    static int pimp(int n){
+        int i = 0;
+        if(n%2==0){
+        }else{
+            i=n;
+        }
+        return i;
+        }
+    static double psomar(int n,double soma){
+        double s;
+        s=soma+n;
+        return s;
+    }
+    static double pmedia(double s,int c){
+        double m;
+        m=s/c;
+        return m;
+    }
+    }
+    

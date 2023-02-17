@@ -1,0 +1,22 @@
+EDITORA INFO
+
+O que quer:
+fichas numeradas o cadastro de autores e o cadastro de livros
+
+nome , formação academica , endereço 
+
+REGRA DOS 6 PASSOS
+
+1)Idetificar os objetos(entidades)
+-autor
+-livro
+
+2)CARACTERIZAR OS OBJETOS(ETIDADES)
+autor_cod,nome,form,ende,tel,livro_co,titulo,autor,sinopse,assunto.
+
+3)RERESENTAR OS OBJETOS
+Autor e livro os dois em retangulo
+
+4)Idetificar os relacionamentos
+
+5)Caracterizar os relac.

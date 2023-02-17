@@ -1,0 +1,15 @@
+/* CSS Document */
+embed{
+controller: false;
+autoplay: true;
+bgcolor: #000;
+loop: true;
+autoplay=1;
+showcontrols: false;
+start=5;
+
+}
+h1{
+background-color:#00FF00;
+}
+
